@@ -27,7 +27,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/app",
       abstract: true,
       templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
+      controller: 'AppCtrl as app'
     })
 
     .state('app.search', {
@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          controller: 'PlaylistsCtrl as lists'
         }
       }
     })
@@ -62,7 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          controller: 'PlaylistCtrl as play'
         }
       }
     });
